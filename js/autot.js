@@ -377,7 +377,7 @@ function autotrackOnDeviceList(event) {
         autotrackSetStatus("No device found");
         return;
     }
-    autotrackDeviceName = results[0];
+    autotrackDeviceName = results[1];
 
     autotrackSocket.send(JSON.stringify({
         Opcode : "Attach",
